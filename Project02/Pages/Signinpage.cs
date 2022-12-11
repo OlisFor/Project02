@@ -17,7 +17,7 @@ namespace Project02.Pages
         IWebElement LoginButton => driver.FindElement(By.XPath("//*[@id=\"login\"]"));
         IWebElement SignoutButton => driver.FindElement(By.XPath(""));
 
-    
+
         public Signinpage()
         {
             driver = Hooks1.driver;
@@ -37,6 +37,10 @@ namespace Project02.Pages
         public void ClickLoginButton()
         {
             LoginButton.Click();
+        }
+        public void clickSignoutButton()
+        {
+            SignoutButton.Click();
         }
     }
 
